@@ -1,0 +1,16 @@
+.article {
+  max-width: 100%;
+  border: 1px solid var(--card-border-color);
+  border-radius: var(--border-radius);
+  background-color: var(--paper-color);
+  box-shadow:
+    0 1px 1px rgba(0, 0, 0, 0.15),
+    0 10px 0 -5px #eee4c9,
+    0 10px 1px -4px rgba(0, 0, 0, 0.15),
+    0 20px 0 -10px #e5d8b8,
+    0 20px 1px -9px rgba(0, 0, 0, 0.15);
+}
+
+.content {
+  padding: 20px;
+}

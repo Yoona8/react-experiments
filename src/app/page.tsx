@@ -1,4 +1,4 @@
-import { EpicReactSearch } from '@/components/EpicReactSearch';
+import { EpicReactSearch } from '@/components/EpicReactSearch/EpicReactSearch';
 import styles from './page.module.css';
 
 export default function Home() {

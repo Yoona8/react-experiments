@@ -1,4 +1,11 @@
 :root {
+  --card-border-color: #ddd;
+  --paper-color: #fdf6e3;
+  --background-color: #f0e6d2;
+  --border-radius: 8px;
+  --button-background-color: #8b2e2e;
+  --checkbox-background-color: #8b2e2e;
+  --outline-color: #8b2e2e;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -8,12 +15,26 @@
 
 html,
 body {
+  width: 100%;
+  height: 100%;
   margin: 0;
   padding: 0;
 }
 
+* {
+  outline-color: var(--outline-color);
+}
+
 body {
+  min-width: 420px;
+  line-height: 1.35;
   font-family: var(--font-open-sans);
+  background-color: var(--background-color);
+  background-image:
+    radial-gradient(#dccbb3 2px, transparent 2px),
+    radial-gradient(#dccbb3 2px, transparent 2px);
+  background-size: 32px 32px;
+  background-position: 0 0, 16px 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -27,6 +48,30 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+button {
+  display: inline-block;
+  margin: 0;
+  padding: 8px 20px;
+  font: inherit;
+  font-weight: 600;
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  background-color: var(--button-background-color);
+}
+
+button:focus {
+  outline: 2px solid var(--outline-color);
+  outline-offset: 2px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  button:hover {
+    cursor: pointer;
+    opacity: 0.9;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
