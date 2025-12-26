@@ -23,10 +23,11 @@
   width: 60px;
   height: 60px;
   font-size: 30px;
-  border: 2px dotted green;
+  border: 2px dotted var(--filters-outline-color);
   border-radius: var(--border-radius);
 }
 
 .checkbox:checked + .label .icon {
-  border-color: var(--checkbox-background-color);
+  border-color: var(--outline-color);
+  background-color: antiquewhite;
 }

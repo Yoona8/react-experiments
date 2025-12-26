@@ -6,6 +6,8 @@
   --button-background-color: #8b2e2e;
   --checkbox-background-color: #8b2e2e;
   --outline-color: #8b2e2e;
+  --headings-color: #4c732f;
+  --filters-outline-color: #4c732f;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -72,17 +74,8 @@ h2 {
   font-weight: 400;
   font-size: 28px;
   font-family: var(--font-chewy);
-  /* text-shadow: 
-    -1px -1px 1px var(--outline-color),
-    1px -1px 1px var(--outline-color),
-    -1px 1px 1px var(--outline-color),
-    1px 1px 1px var(--outline-color),
-    0 0 1px var(--outline-color),
-    0 0 2px var(--outline-color),
-    0 0 3px var(--outline-color),
-    0 0 4px var(--outline-color),
-    0 0 5px var(--outline-color); */
-  /* color: #fff; */
+  line-height: 1.2;
+  color: var(--headings-color);
 }
 
 @media (hover: hover) and (pointer: fine) {
