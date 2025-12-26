@@ -1,10 +1,16 @@
 import type { Metadata } from 'next';
-import { Open_Sans } from 'next/font/google';
+import { Open_Sans, Chewy } from 'next/font/google';
 import './globals.css';
 
 const openSans = Open_Sans({
   variable: '--font-open-sans',
   fallback: ['sans-serif'],
+});
+
+const chewy = Chewy({
+  variable: '--font-chewy',
+  weight: '400',
+  subsets: ['latin'],
 });
 
 export const metadata: Metadata = {
@@ -19,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${openSans.variable}`}>
+      <body className={`${openSans.variable} ${chewy.variable}`}>
         {children}
       </body>
     </html>
