@@ -19,7 +19,7 @@ export const EpicReactSearch = () => {
     }
   };
 
-  return (<div className="wrapper">
+  return (<div className="epic-react-search">
     <form className="search-form">
       <h2>Search Your Favorite</h2>
       <p>
