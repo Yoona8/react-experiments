@@ -1,4 +1,4 @@
-import { IDishesFilter } from '@/data/dishes-filters.data';
+import { IDishesFilter } from '@/01-epic-react-search/data/dishes-filters.data';
 
 import './DishFilter.css';
 

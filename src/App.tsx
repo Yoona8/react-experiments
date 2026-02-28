@@ -1,12 +1,8 @@
-import { EpicReactSearch } from "./components/01-epic-react-search/EpicReactSearch/EpicReactSearch";
+import { App01 } from "./01-epic-react-search/App01";
 
 export const App = () => {
   return (
-    <div className="page">
-      <main className="main">
-        <EpicReactSearch />
-      </main>
-    </div>
+    <App01 />
   );
 };
 

@@ -1,4 +1,4 @@
-import { IDish } from '@/data/dishes.data';
+import { IDish } from '@/01-epic-react-search/data/dishes.data';
 
 import './Dish.css';
 

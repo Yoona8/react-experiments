@@ -3,8 +3,8 @@ import { useState } from 'react';
 import { Dish } from '../Dish/Dish';
 import { DishFilter } from '../DishFilter/DishFilter';
 
-import { dishesData } from '../../../data/dishes.data';
-import { dishesFiltersData } from '../../../data/dishes-filters.data';
+import { dishesData } from '../../data/dishes.data';
+import { dishesFiltersData } from '../../data/dishes-filters.data';
 
 import './EpicReactSearch.css';
 
