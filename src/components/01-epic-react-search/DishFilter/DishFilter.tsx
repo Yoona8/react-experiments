@@ -1,5 +1,6 @@
 import { IDishesFilter } from '@/data/dishes-filters.data';
-import styles from './dish-filter.module.css';
+
+import './DishFilter.css';
 
 interface DishFilterProps {
   filter: IDishesFilter
@@ -10,17 +11,17 @@ export const DishFilter = ({ filter, onCheckFlavor }: DishFilterProps) => {
   const { id, name, emoji } = filter;
 
   return (
-    <p className={styles.filter}>
+    <p className="dish-filter">
       <input
-        className={styles.checkbox}
+        className="checkbox"
         type="checkbox"
         name="flavor"
         value={name}
         id={`${id}-filter-flavor`}
         onChange={(evt) => onCheckFlavor(evt.target.value, evt.target.checked)}
       />
-      <label className={styles.label} htmlFor={`${id}-filter-flavor`}>
-        <span className={styles.icon}>{emoji}</span>
+      <label className="label" htmlFor={`${id}-filter-flavor`}>
+        <span className="icon">{emoji}</span>
         {name}
       </label>
     </p>

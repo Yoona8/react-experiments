@@ -1,10 +1,10 @@
 import { useState } from 'react';
 
 import { Dish } from '../Dish/Dish';
-// import { DishFilter } from '../01-epic-react-search/dish-filter/dish-filter';
+import { DishFilter } from '../DishFilter/DishFilter';
 
 import { dishesData } from '../../../data/dishes.data';
-// import { dishesFiltersData } from '@/data/dishes-filters.data';
+import { dishesFiltersData } from '../../../data/dishes-filters.data';
 
 import './EpicReactSearch.css';
 
@@ -35,14 +35,14 @@ export const EpicReactSearch = () => {
       <fieldset className="fieldset">
         <legend>Filter by flavor:</legend>
         <ul className="checkboxes">
-          {/* {dishesFiltersData.map((filter) => (
+          {dishesFiltersData.map((filter) => (
             <li key={filter.id}>
               <DishFilter
                 filter={filter}
                 onCheckFlavor={onCheckFlavor}
               />
             </li>
-          ))} */}
+          ))}
         </ul>
       </fieldset>
       <button type="submit">Search</button>
