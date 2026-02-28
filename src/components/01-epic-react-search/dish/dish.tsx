@@ -1,8 +1,6 @@
-'use client';
-
-import Image from 'next/image';
 import { IDish } from '@/data/dishes.data';
-import styles from './dish.module.css';
+
+import './Dish.css';
 
 interface DishProps {
   dish: IDish;
@@ -11,15 +9,15 @@ interface DishProps {
 export const Dish = ({ dish }: DishProps) => {
   const { name, hook, dishDescription, drink, image } = dish;
 
-  return <article className={styles.article}>
-    <Image
+  return <article className="dish">
+    <img
       src={image}
       alt={name}
       width={2816}
       height={1536}
-      className={styles.image}
+      className="image"
     />
-    <div className={styles.content}>
+    <div className="content">
       <h2>{name}</h2>
       <p>{hook}</p>
       <p>{dishDescription}</p>

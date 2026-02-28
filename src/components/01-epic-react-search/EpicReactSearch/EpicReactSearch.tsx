@@ -1,9 +1,9 @@
 import { useState } from 'react';
 
-// import { Dish } from '../01-epic-react-search/dish/dish';
+import { Dish } from '../Dish/Dish';
 // import { DishFilter } from '../01-epic-react-search/dish-filter/dish-filter';
 
-// import { dishesData } from '@/data/dishes.data';
+import { dishesData } from '../../../data/dishes.data';
 // import { dishesFiltersData } from '@/data/dishes-filters.data';
 
 import './EpicReactSearch.css';
@@ -48,12 +48,12 @@ export const EpicReactSearch = () => {
       <button type="submit">Search</button>
     </form>
     <ul className="dishes">
-      {/* {dishesData
+      {dishesData
         .filter((dish) => dish.name.toLowerCase().includes(searchQuery.toLowerCase()))
         .map((dish) => <li key={dish.id}>
           <Dish dish={dish} />
         </li>)
-      } */}
+      }
     </ul>
   </div>);
 };

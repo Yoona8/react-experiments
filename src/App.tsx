@@ -1,4 +1,4 @@
-import { EpicReactSearch } from "./components/EpicReactSearch/EpicReactSearch";
+import { EpicReactSearch } from "./components/01-epic-react-search/EpicReactSearch/EpicReactSearch";
 
 export const App = () => {
   return (
