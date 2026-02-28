@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Open+Sans:wght@300..800&display=swap');
+
 :root {
   --card-border-color: #ddd;
   --paper-color: #fdf6e3;
@@ -30,7 +32,7 @@ body {
 body {
   min-width: 420px;
   line-height: 1.35;
-  font-family: var(--font-open-sans);
+  font-family: 'Open Sans', sans-serif;
   background-color: var(--background-color);
   background-image:
     radial-gradient(#dccbb3 2px, transparent 2px),
