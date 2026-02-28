@@ -3,7 +3,7 @@
   margin: 0 auto;
 }
 
-.searchForm {
+.search-form {
   margin-bottom: 20px;
   padding: 20px 40px;
   font-size: 1.1rem;
@@ -11,12 +11,12 @@
   border-radius: var(--border-radius);
 }
 
-.searchLabel {
+.search-label {
   margin-right: 10px;
   font-weight: 600;
 }
 
-.searchForm input[type="search"] {
+.search-form input[type="search"] {
   width: 300px;
   max-width: 100%;
   padding: 8px 12px;

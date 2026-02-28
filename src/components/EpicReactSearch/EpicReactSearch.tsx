@@ -1,14 +1,12 @@
-'use client';
-
 import { useState } from 'react';
 
-import { Dish } from './dish/dish';
-import { DishFilter } from './dish-filter/dish-filter';
+// import { Dish } from '../01-epic-react-search/dish/dish';
+// import { DishFilter } from '../01-epic-react-search/dish-filter/dish-filter';
 
-import { dishesData } from '@/data/dishes.data';
-import { dishesFiltersData } from '@/data/dishes-filters.data';
+// import { dishesData } from '@/data/dishes.data';
+// import { dishesFiltersData } from '@/data/dishes-filters.data';
 
-import styles from './epic-react-search.module.css';
+import './EpicReactSearch.css';
 
 export const EpicReactSearch = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -21,11 +19,11 @@ export const EpicReactSearch = () => {
     }
   };
 
-  return (<div className={styles.wrapper}>
-    <form className={styles.searchForm} >
+  return (<div className="wrapper">
+    <form className="search-form">
       <h2>Search Your Favorite</h2>
       <p>
-        <label className={styles.searchLabel} htmlFor="search-input">Search:</label>
+        <label className="search-label" htmlFor="search-input">Search:</label>
         <input 
           id="search-input" 
           type="search" 
@@ -34,26 +32,28 @@ export const EpicReactSearch = () => {
           onChange={(evt) => setSearchQuery(evt.target.value)}
         />
       </p>
-      <fieldset className={styles.fieldset}>
+      <fieldset className="fieldset">
         <legend>Filter by flavor:</legend>
-        <ul className={styles.checkboxes}>
-          {dishesFiltersData.map((filter) => (
+        <ul className="checkboxes">
+          {/* {dishesFiltersData.map((filter) => (
             <li key={filter.id}>
               <DishFilter
                 filter={filter}
                 onCheckFlavor={onCheckFlavor}
               />
             </li>
-          ))}
+          ))} */}
         </ul>
       </fieldset>
       <button type="submit">Search</button>
     </form>
-    <ul className={styles.dishes}>
-      {dishesData
+    <ul className="dishes">
+      {/* {dishesData
         .filter((dish) => dish.name.toLowerCase().includes(searchQuery.toLowerCase()))
-        .map((dish) => <li key={dish.id}><Dish dish={dish} /></li>)
-      }
+        .map((dish) => <li key={dish.id}>
+          <Dish dish={dish} />
+        </li>)
+      } */}
     </ul>
   </div>);
 };
