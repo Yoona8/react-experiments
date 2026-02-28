@@ -75,7 +75,7 @@ h2 {
   margin: 0;
   font-weight: 400;
   font-size: 28px;
-  font-family: var(--font-chewy);
+  font-family: 'Chewy', sans-serif;
   line-height: 1.2;
   color: var(--headings-color);
 }

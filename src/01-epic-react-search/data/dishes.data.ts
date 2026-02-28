@@ -79,5 +79,13 @@ export const dishesData: IDish[] = [
     dishDescription: 'Frozen sliced bananas blended until they reach soft-serve consistency. Swirl in pure tahini (sesame paste) and fold in chopped dried figs. The earthiness of the tahini balances the high sweetness of the banana.',
     drink: 'Genmaicha (Brown Rice Tea). The toasted rice flavor in this green tea pairs exceptionally well with the sesame/tahini flavor profile.',
     image: '/tahini-fig-cream.png',
+  },
+  {
+    id: 'raw-carrot-cake-energy-bites',
+    name: 'Raw Carrot Cake Energy Bites',
+    hook: 'Minimalist, no-bake, and nutrient-dense.',
+    dishDescription: 'Shredded carrots, walnuts, dates, unsweetened desiccated coconut, nutmeg, and ginger pulsed in a food processor and rolled into balls.',
+    drink: 'Masala Chai (Unsweetened). The spices in the tea (clove, cinnamon, ginger) mirror the spices in the bites, creating a warming, cohesive experience.',
+    image: '/raw-carrot-cake-energy-bites.png',
   }
 ];
