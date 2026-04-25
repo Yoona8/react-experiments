@@ -87,5 +87,13 @@ export const dishesData: IDish[] = [
     dishDescription: 'Shredded carrots, walnuts, dates, unsweetened desiccated coconut, nutmeg, and ginger pulsed in a food processor and rolled into balls.',
     drink: 'Masala Chai (Unsweetened). The spices in the tea (clove, cinnamon, ginger) mirror the spices in the bites, creating a warming, cohesive experience.',
     image: '/raw-carrot-cake-energy-bites.png',
+  },
+  {
+    id: 'lemon-coconut-chia-pudding-parfait',
+    name: 'Lemon & Coconut Chia Pudding Parfait',
+    hook: 'Bright and refreshing, perfect for a mental reset after a long coding session.',
+    dishDescription: 'Chia seeds soaked in coconut milk with lemon zest. Layered with a puree of ripe mango or pineapple for acidity and sweetness.',
+    drink: 'Lemongrass & Ginger. This herbal infusion amplifies the citrus zest in the pudding and adds a spicy kick to cut the creaminess of the coconut.',
+    image: '/lemon-coconut-chia-pudding-parfait.png',
   }
 ];
